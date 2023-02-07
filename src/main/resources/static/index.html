@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Nome da Loja</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <style>
+        body{
+            background-color: rgb(163, 177, 224) ;
+        }
+    </style>
+    <div id="banner">
+        <img src="Imagens_banner.jpeg" alt="">
+        <h1>VIRTUAL ELETRONICOS</h1>
+        <h3>Fornecedor de componentes, placas e periféricos eletrônicos</h3>
+    </div>
+    <div id="container">
+        <div id="lsQuantidade">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Valor Unitário</th>
+                        <th>Quantidade</th>
+                        <th>Valor Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <label for="nome">Nome</label><br>
+            <input type="text" id="nome"><br>
+            <label for="nome">Telefone</label><br>
+            <input type="text" id="fone"><br><br>
+            <input type="button" id="bt-enviar" value="Enviar Pedido" onclick="enviarWhatsApp()">
+        </div>
+        <div class="ls-produto" id="lsProduto">
+        </div>
+
+        <div id="bt-fixo" onclick="carrinho(),mudarTela()">
+            <i style="font-size:54px" class="fa">&#xf07a;</i>
+            <span id="qt-produto">0</span>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
