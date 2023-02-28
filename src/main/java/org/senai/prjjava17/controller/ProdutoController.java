@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-@RequestMapping(path = "/api/produto")
+@RequestMapping("/api/produto")  //exclusao do termo "path="
 @CrossOrigin("*")
 public class ProdutoController {
 
